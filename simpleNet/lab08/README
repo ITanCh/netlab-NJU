@@ -1,0 +1,30 @@
+
+
+使用提供的Makefile文件编译代码.  
+有两组用来测试的可执行文件: 一组用于简单版本的客户服务器, 一组用于压力测试版本的客户服务器.
+在命令行执行"make"将同时编译两组可执行文件.  
+执行"make simple"将只编译简单版本的客户服务器.
+执行"make stress"将只编译压力测试版本的客户服务器.
+执行"./simple_client"运行简单版本的客户端.
+执行"./simple_server"运行简单版本的服务器.
+压力测试版本的客户端和服务器运行方式相同, 只需将simple替换为stress即可.
+
+client目录:
+app_simple_client.c - 简单版本的客户端应用程序源文件
+app_stress_client.c - 压力测试版本的客户端应用程序源文件
+stcp_client.c - stcp客户端源文件
+stcp_client.h - stcp客户端头文件
+sendthis.txt - 简单的测试数据
+
+server目录:
+app_simple_server.c - 简单版本的服务器应用程序源文件
+app_stress_server.c - 压力测试版本的服务器应用程序源文件
+stcp_server.c - stcp服务器源文件
+stcp_server.h - stcp服务器头文件
+
+common目录:
+seg.c - sip函数实现
+seg.h - sip函数头文件
+constants.h - 定义一些有用的常量
+
+你的任务是实现每个.c文件中的留空函数.

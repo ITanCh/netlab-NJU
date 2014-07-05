@@ -1,0 +1,99 @@
+
+SimpleTorrent代码框架:
+
+这个目录下的代码为各个小组实现SimpleTorrent的客户端提供了一个起点. 这是一个比较大的项目, 所以
+请在设计阶段仔细思考, 最终的实现并不是太难.
+
+我们提供了一个样本代码文件simpletorrent.c, 它展示了如何使用提供的数据结构和函数来连接到tracker,
+提取需要的数据, 然后更新tracker. 你完全可以根据自己的想法使用并修改这个代码文件, 或只是把它作为
+一个样例来设计自己的系统.
+
+我们还提供了一个样本数据文件data/Wildlife.wmv, 你可以用它制作一个torrent文件, 并作为测试数据.
+
+目录结构说明:
+  bin:  你编译的可执行代码放在这里.
+  data: (自己拥有的或下载的)数据文件放在这里.
+  src:  我们提供的源代码, 你也可以在这个目录下编写自己的代码.
+  torrents: torrent文件放在这里.
+  tools: 包含一个你可以运行的tracker服务器, 以及一个Bittorrent客户端, 它可以生成torrent文件, 以及
+         显示torrent文件的信息.
+		 (注: 该目录中有两个子目录32bit和64bit, 分别存放软件的32位版本和64位版本, 请将与你的系统
+		 对应版本目录中的程序拷贝至tools目录下, 下面的说明都是假设软件直接存放在tools目录下)
+
+  注意: data和torrents目录只是用来帮助你组织好目录结构, 程序代码和这两个目录之间并没有依赖关系.
+
+编译:
+  使用make编译你的客户端, make clean删除可执行文件.
+
+  如果你添加了自己的源文件, 请注意相应的修改Makefile文件中的内容.
+
+运行:
+  
+    因为各个小组的开发进度可能不一样, 为了方便各个小组进行软件测试, 我们在提供的代码中包含了一个tracker
+	服务器程序.	因此, 大家在开始开发自己的客户端程序之前, 需要做一些准备工作.
+
+    1) 你必须有一个torrent文件. 我们在data目录下提供了一个测试数据文件. 因为你需要运行自己的tracker服务
+	   器来进行测试, 所以你要创建一个torrent文件. 你可以在SimpleTorrent目录下执行如下命令来完成这个任务:
+    
+    ./tools/bittorrent -t <data file> -s <torrent file> -u <tracker url> 
+    
+    其中<data file>是你要共享的文件, <tracker url>是tracker的"announce-url", 它的格式如下:
+    http://ip_address:portnum/announce 
+	其中ip_address是运行tracker的主机的IP地址, portnum是tracker监听的非保留端口, Bittorrent tracker的默认
+	监听端口是6969. 注意, /announce部分非常重要, 不要把它忘了.
+
+    注意: 虽然<data file>可以是一个文件或一个目录. 但本项目的基本要求只要求你实现单个文件的共享. 如果你实现
+	了目录共享功能, 可以获得加分.
+
+    这个命令将在当前目录中生成一个torrent文件<torrent file>. 请将该文件转移到torrents目录中.
+
+    2) 运行tracker. 首先SSH登录到你准备运行tracker的主机上, 然后在SimpleTorrent目录中使用如下命令:
+
+    .tools/tracker -i <ip> -p <portnum>
+    
+    这将启动tracker服务, 其中portnum是你在torrent文件中指定的端口号.
+
+    3) 运行Bittorrent客户端. (你可以在多台主机上运行它)
+
+    ./tools/bittorrent <torrent file> 
+
+    4) 运行你自己的客户端. 测试你的客户端和tracker以及给定bittorrent程序之间的交互.
+
+    5) 其他有用的信息:
+
+    查看bittorrent和opentracker的帮助信息的命令:
+
+    ./tools/bittorrent -h
+    ./tools/tracker --help
+
+    你可以在运行bittorrent客户端时加上"-v"参数以启用verbose模式来看到更多的调试信息. 同样的, tracker.debug
+	程序也是一个verbose版本的tracker服务器, 它可以打印出更多的调试信息.
+
+    命令"./tools/bittorrent -x <torrent file>"可以dump出torrent文件中的信息.
+
+源代码说明:
+  我们提供的源文件中一些实现代码并不是很好, 或者说并不是你希望的. 例如, 用于发送消息给tracker的函数使用了全局变量. 
+  你完全可以根据自己的想法随意的改变我们提供的函数实现.
+  
+  bencode.{h/c} - 用于解码B编码数据的辅助函数
+  btdata.h      - 有用的数据结构和全局变量
+  simpletorrent.c - simpletorrent客户端的主程序文件
+  make_tracker_request.c - 用于生成发送给tracker消息的函数
+  parse_announce_url.c - 获取tracker主机名的辅助函数
+  parsetorrentfile.c - 从torrent文件中提取数据的函数
+  process_tracker_response.c - 从tracker响应中提取数据
+  sha1.{h/c} - 实现sha1哈希
+  shatest.c - 如何使用sha1函数的样例
+  shutdown.c - 处理ctrl-c的基本信号句柄
+  util.{h/c} - 完成各种事务的函数, 对函数功能的一些描述在头文件util.h中
+  
+  注意: 在Linux系统中, SHA1函数已包括在<openssl/sha.h>头文件中(Ubuntu系统需要分别执行命令sudo apt-get install openssl和
+  sudo apt-get install libssl-dev来安装openssl及其开发库), 所以在源代码中包括一个SHA1的实现并不是必须的(即sha1.{h/c}
+  可以没有). 具体使用方法如下所示:
+  SHA1(const unsigned char *d, unsigned long n, unsigned char *md);
+  参数d指向需要计算哈希值的数据, n是数据的长度(以字节为单位), md指向计算好的哈希值. 你需要为md分配空间, 并且它至少能
+  保存SHA_DIGEST_LENGTH=20个字节. 更详细的信息参见"man SHA1".
+  在编译时, 需要添加"-lcrypto"选项来链接openssl.
+
+
+

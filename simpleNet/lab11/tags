@@ -1,0 +1,364 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCEPT_POLLING_INTERVAL	common/constants.h	37;"	d
+BROADCAST_NODEID	common/constants.h	74;"	d
+CLIENTPORT	client/IM_client.c	10;"	d	file:
+CLIENTPORT1	client/app_simple_client.c	29;"	d	file:
+CLIENTPORT1	client/app_stress_client.c	29;"	d	file:
+CLIENTPORT1	server/app_simple_server.c	27;"	d	file:
+CLIENTPORT1	server/app_stress_server.c	29;"	d	file:
+CLIENTPORT2	client/app_simple_client.c	31;"	d	file:
+CLIENTPORT2	server/app_simple_server.c	29;"	d	file:
+CLOSED	client/stcp_client.h	15;"	d
+CLOSED	server/stcp_server.h	16;"	d
+CLOSEWAIT	server/stcp_server.h	19;"	d
+CLOSEWAIT_TIMEOUT	common/constants.h	31;"	d
+CONNECTED	client/stcp_client.h	17;"	d
+CONNECTED	server/stcp_server.h	18;"	d
+CONNECTION_PORT	common/constants.h	50;"	d
+CONSTANTS_H	common/constants.h	8;"	d
+DATA	common/seg.h	19;"	d
+DATAACK	common/seg.h	20;"	d
+DATA_TIMEOUT	common/constants.h	41;"	d
+DVTABLE_H	sip/dvtable.h	8;"	d
+FIN	common/seg.h	17;"	d
+FINACK	common/seg.h	18;"	d
+FINWAIT	client/stcp_client.h	18;"	d
+FIN_MAX_RETRY	common/constants.h	29;"	d
+FIN_TIMEOUT	common/constants.h	25;"	d
+GBN_WINDOW	common/constants.h	43;"	d
+GetTask	server/IM_server.c	/^void *GetTask(void *arg)$/;"	f
+GiveTask	server/IM_server.c	/^void *GiveTask(void *arg)$/;"	f
+INFINITE_COST	common/constants.h	68;"	d
+LISTENING	server/stcp_server.h	17;"	d
+LISTENQ	server/IM_server.c	13;"	d	file:
+MAXLINE	client/IM_client.c	9;"	d	file:
+MAXLINE	server/IM_server.c	10;"	d	file:
+MAX_NODE_NUM	common/constants.h	62;"	d
+MAX_PKT_LEN	common/constants.h	56;"	d
+MAX_ROUTINGTABLE_SLOTS	common/constants.h	65;"	d
+MAX_SEG_LEN	common/constants.h	19;"	d
+MAX_SEQNUM	common/constants.h	16;"	d
+MAX_TRANSPORT_CONNECTIONS	common/constants.h	15;"	d
+NAME_LENGTH	client/IM_client.c	12;"	d	file:
+NAME_LENGTH	server/IM_server.c	11;"	d	file:
+NBRCOSTTABLE_H	sip/nbrcosttable.h	8;"	d
+NEIGHBORTABLE_H	son/neighbortable.h	8;"	d
+NETWORK_H	sip/sip.h	8;"	d
+PKTRECV	common/pkt.c	11;"	d	file:
+PKTSTART1	common/pkt.c	9;"	d	file:
+PKTSTART2	common/pkt.c	10;"	d	file:
+PKTSTOP1	common/pkt.c	12;"	d	file:
+PKT_H	common/pkt.h	2;"	d
+PKT_LOSS_RATE	common/constants.h	21;"	d
+RECEIVE_BUF_SIZE	common/constants.h	39;"	d
+RECVBUF_POLLING_INTERVAL	common/constants.h	35;"	d
+ROUTEUPDATE_INTERVAL	common/constants.h	77;"	d
+ROUTE_UPDATE	common/pkt.h	7;"	d
+ROUTINGTABLE_H	sip/routingtable.h	9;"	d
+RecvTask	client/IM_client.c	/^void *RecvTask(void *arg){$/;"	f
+SEGRECV	common/seg.h	24;"	d
+SEGSTART1	common/seg.h	22;"	d
+SEGSTART2	common/seg.h	23;"	d
+SEGSTOP1	common/seg.h	25;"	d
+SEG_H	common/seg.h	10;"	d
+SENDBUF_POLLING_INTERVAL	common/constants.h	33;"	d
+SERVERPORT	client/IM_client.c	11;"	d	file:
+SERVERPORT1	client/app_simple_client.c	30;"	d	file:
+SERVERPORT1	client/app_stress_client.c	30;"	d	file:
+SERVERPORT1	server/app_simple_server.c	28;"	d	file:
+SERVERPORT1	server/app_stress_server.c	30;"	d	file:
+SERVERPORT2	client/app_simple_client.c	32;"	d	file:
+SERVERPORT2	server/app_simple_server.c	30;"	d	file:
+SERV_PORT	server/IM_server.c	12;"	d	file:
+SIP	common/pkt.h	8;"	d
+SIP_PORT	common/constants.h	71;"	d
+SIP_WAITTIME	sip/sip.c	32;"	d	file:
+SON_H	son/son.h	8;"	d
+SON_PORT	common/constants.h	53;"	d
+SON_START_DELAY	son/son.c	30;"	d	file:
+STARTDELAY	client/app_simple_client.c	35;"	d	file:
+STARTDELAY	client/app_stress_client.c	33;"	d	file:
+STCPCLIENT_H	client/stcp_client.h	10;"	d
+STCPSERVER_H	server/stcp_server.h	9;"	d
+SYN	common/seg.h	15;"	d
+SYNACK	common/seg.h	16;"	d
+SYNSENT	client/stcp_client.h	16;"	d
+SYN_MAX_RETRY	common/constants.h	27;"	d
+SYN_TIMEOUT	common/constants.h	23;"	d
+SendTask	client/IM_client.c	/^void *SendTask(void *arg){$/;"	f
+TCBTable	client/stcp_client.c	/^client_tcb_t *TCBTable[MAX_TRANSPORT_CONNECTIONS];$/;"	v
+TOPOLOGY_H	topology/topology.h	8;"	d
+USER	server/IM_server.c	/^typedef struct USER{$/;"	s	file:
+WAITTIME	client/app_simple_client.c	37;"	d	file:
+WAITTIME	client/app_stress_client.c	35;"	d	file:
+WAITTIME	server/app_simple_server.c	32;"	d	file:
+WAITTIME	server/app_stress_server.c	32;"	d	file:
+ack_num	common/seg.h	/^	unsigned int ack_num;         \/\/ç¡®è®¤å·$/;"	m	struct:stcp_hdr
+allCount	topology/topology.c	/^int allCount = 0;$/;"	v
+allIdList	topology/topology.c	/^int * allIdList;$/;"	v
+alln	sip/dvtable.c	/^int alln=0;$/;"	v
+bigCount	topology/topology.c	/^int bigCount = 0;$/;"	v
+bufMutex	client/stcp_client.h	/^	pthread_mutex_t* bufMutex;      \/\/·¢ËÍ»º³åÇø»¥³âÁ¿$/;"	m	struct:client_tcb
+bufMutex	server/stcp_server.h	/^	pthread_mutex_t* bufMutex;      \/\/Ö¸ÏòÒ»¸ö»¥³âÁ¿µÄÖ¸Õë, ¸Ã»¥³âÁ¿ÓÃÓÚ¶Ô½ÓÊÕ»º³åÇøµÄ·ÃÎÊ$/;"	m	struct:server_tcb
+checkchecksum	common/seg.c	/^int checkchecksum(seg_t* segment)$/;"	f
+checksum	common/seg.c	/^unsigned short checksum(seg_t* segment)$/;"	f
+checksum	common/seg.h	/^	unsigned short int checksum;  \/\/è¿™ä¸ªæ®µçš„æ ¡éªŒå’Œ$/;"	m	struct:stcp_hdr
+client_nodeID	client/stcp_client.h	/^	unsigned int client_nodeID;     \/\/¿Í»§¶Ë½ÚµãID, ÀàËÆIPµØÖ·$/;"	m	struct:client_tcb
+client_nodeID	server/stcp_server.h	/^	unsigned int client_nodeID;     \/\/¿Í»§¶Ë½ÚµãID, ÀàËÆIPµØÖ·$/;"	m	struct:server_tcb
+client_portNum	client/stcp_client.h	/^	unsigned int client_portNum;    \/\/¿Í»§¶Ë¶Ë¿ÚºÅ$/;"	m	struct:client_tcb
+client_portNum	server/stcp_server.h	/^	unsigned int client_portNum;    \/\/¿Í»§¶Ë¶Ë¿ÚºÅ$/;"	m	struct:server_tcb
+client_tcb	client/stcp_client.h	/^typedef struct client_tcb {$/;"	s
+client_tcb_t	client/stcp_client.h	/^} client_tcb_t;$/;"	t	typeref:struct:client_tcb
+conn	son/neighbortable.h	/^  int conn;	            \/\/é’ˆå¯¹è¿™ä¸ªé‚»å±…çš„TCPè¿æ¥å¥—æ¥å­—æè¿°ç¬¦$/;"	m	struct:neighborentry
+connectNbrs	son/son.c	/^int connectNbrs() {$/;"	f
+connectToSIP	client/IM_client.c	/^int connectToSIP() {$/;"	f
+connectToSIP	client/app_simple_client.c	/^int connectToSIP() {$/;"	f
+connectToSIP	client/app_stress_client.c	/^int connectToSIP() {$/;"	f
+connectToSIP	server/IM_server.c	/^int connectToSIP() {$/;"	f
+connectToSIP	server/app_simple_server.c	/^int connectToSIP() {$/;"	f
+connectToSIP	server/app_stress_server.c	/^int connectToSIP() {$/;"	f
+connectToSON	sip/sip.c	/^int connectToSON() { $/;"	f
+cost	common/pkt.h	/^        unsigned int cost;	    \/\/´ÓÔ´½Úµã(±¨ÎÄÊ×²¿ÖĞµÄsrc_nodeID)µ½Ä¿±ê½ÚµãµÄÁ´Â·´ú¼Û$/;"	m	struct:routeupdate_entry
+cost	sip/dvtable.h	/^	unsigned int cost;	\/\/åˆ°ç›®æ ‡èŠ‚ç‚¹çš„ä»£ä»·$/;"	m	struct:distancevectorentry
+cost	sip/nbrcosttable.h	/^	unsigned int cost;	    \/\/åˆ°è¯¥é‚»å±…çš„ç›´æ¥é“¾è·¯ä»£ä»·$/;"	m	struct:neighborcostentry
+costList	topology/topology.c	/^int * costList;$/;"	v
+count	server/IM_server.c	/^int count=0;		\/\/count who can take this message$/;"	v
+data	common/pkt.h	/^  char data[MAX_PKT_LEN];$/;"	m	struct:packet
+data	common/seg.h	/^	char data[MAX_SEG_LEN];$/;"	m	struct:segment
+destNodeID	sip/routingtable.h	/^	int destNodeID;		\/\/ç›®æ ‡èŠ‚ç‚¹ID$/;"	m	struct:routingtable_entry
+dest_nodeID	common/pkt.h	/^  int dest_nodeID;		          \/\/Ä¿±ê½ÚµãID$/;"	m	struct:sipheader
+dest_port	common/seg.h	/^	unsigned int dest_port;       \/\/ç›®çš„ç«¯å£å·$/;"	m	struct:stcp_hdr
+disconnectToSIP	client/IM_client.c	/^void disconnectToSIP(int sip_conn) {$/;"	f
+disconnectToSIP	client/app_simple_client.c	/^void disconnectToSIP(int sip_conn) {$/;"	f
+disconnectToSIP	client/app_stress_client.c	/^void disconnectToSIP(int sip_conn) {$/;"	f
+disconnectToSIP	server/IM_server.c	/^void disconnectToSIP(int sip_conn) {$/;"	f
+disconnectToSIP	server/app_simple_server.c	/^void disconnectToSIP(int sip_conn) {$/;"	f
+disconnectToSIP	server/app_stress_server.c	/^void disconnectToSIP(int sip_conn) {$/;"	f
+distancevector	sip/dvtable.h	/^typedef struct distancevector {$/;"	s
+distancevectorentry	sip/dvtable.h	/^typedef struct distancevectorentry {$/;"	s
+dv	sip/sip.c	/^dv_t* dv;				\/\/è·ç¦»çŸ¢é‡è¡¨$/;"	v
+dvEntry	sip/dvtable.h	/^	dv_entry_t* dvEntry;	\/\/ä¸€ä¸ªåŒ…å«Nä¸ªdv_entry_tçš„æ•°ç»„, å…¶ä¸­æ¯ä¸ªæˆå‘˜åŒ…å«ç›®æ ‡èŠ‚ç‚¹IDå’Œä»è¯¥æºèŠ‚ç‚¹åˆ°è¯¥ç›®æ ‡èŠ‚ç‚¹çš„ä»£ä»·. Næ˜¯é‡å ç½‘ç»œä¸­æ€»çš„èŠ‚ç‚¹æ•°.$/;"	m	struct:distancevector
+dv_entry_t	sip/dvtable.h	/^} dv_entry_t;$/;"	t	typeref:struct:distancevectorentry
+dv_mutex	sip/sip.c	/^pthread_mutex_t* dv_mutex;		\/\/è·ç¦»çŸ¢é‡è¡¨äº’æ–¥é‡$/;"	v
+dv_t	sip/dvtable.h	/^} dv_t;$/;"	t	typeref:struct:distancevector
+dvtable_create	sip/dvtable.c	/^dv_t* dvtable_create()$/;"	f
+dvtable_destroy	sip/dvtable.c	/^void dvtable_destroy(dv_t* dvtable)$/;"	f
+dvtable_getcost	sip/dvtable.c	/^unsigned int dvtable_getcost(dv_t* dvtable, int fromNodeID, int toNodeID)$/;"	f
+dvtable_print	sip/dvtable.c	/^void dvtable_print(dv_t* dvtable)$/;"	f
+dvtable_setcost	sip/dvtable.c	/^int dvtable_setcost(dv_t* dvtable,int fromNodeID,int toNodeID, unsigned int cost)$/;"	f
+entry	common/pkt.h	/^        routeupdate_entry_t entry[MAX_NODE_NUM];$/;"	m	struct:pktrt
+entryNum	common/pkt.h	/^        unsigned int entryNum;	\/\/Õâ¸öÂ·ÓÉ¸üĞÂ±¨ÎÄÖĞ°üº¬µÄÌõÄ¿Êı$/;"	m	struct:pktrt
+expect_seqNum	client/stcp_client.h	/^	unsigned int expect_seqNum;$/;"	m	struct:client_tcb
+expect_seqNum	server/stcp_server.h	/^	unsigned int expect_seqNum;     \/\/·şÎñÆ÷ÆÚ´ıµÄÊı¾İĞòºÅ	$/;"	m	struct:server_tcb
+fcount	server/IM_server.c	/^	int fcount;$/;"	m	struct:USER	file:
+fname	client/IM_client.c	/^char fname[NAME_LENGTH];$/;"	v
+forwardpktToSIP	common/pkt.c	/^int forwardpktToSIP(sip_pkt_t* pkt, int sip_conn)$/;"	f
+forwardsegToSTCP	common/seg.c	/^int forwardsegToSTCP(int stcp_conn, int src_nodeID, seg_t* segPtr)$/;"	f
+fri	server/IM_server.c	/^	struct USER* fri[LISTENQ];$/;"	m	struct:USER	typeref:struct:USER::USER	file:
+getBigCount	topology/topology.c	/^int getBigCount()$/;"	f
+getSmallCount	topology/topology.c	/^int getSmallCount()$/;"	f
+getTopoData	topology/topology.c	/^void getTopoData()$/;"	f
+getpktToSend	common/pkt.c	/^int getpktToSend(sip_pkt_t* pkt, int* nextNode,int sip_conn)$/;"	f
+getsegToSend	common/seg.c	/^int getsegToSend(int stcp_conn, int* dest_nodeID, seg_t* segPtr)$/;"	f
+has_message	server/IM_server.c	/^pthread_cond_t has_message = PTHREAD_COND_INITIALIZER;$/;"	v
+hash	sip/routingtable.h	/^	routingtable_entry_t* hash[MAX_ROUTINGTABLE_SLOTS];$/;"	m	struct:routingtable
+head	server/IM_server.c	/^user * head=NULL;$/;"	v
+header	common/pkt.h	/^  sip_hdr_t header;$/;"	m	struct:packet
+header	common/seg.h	/^	stcp_hdr_t header;$/;"	m	struct:segment
+id	server/IM_server.c	/^	pthread_t id;$/;"	m	struct:USER	file:
+isRead	topology/topology.c	/^int isRead=0;$/;"	v
+length	common/pkt.h	/^  unsigned short int length;	  \/\/±¨ÎÄÖĞÊı¾İµÄ³¤¶È$/;"	m	struct:sipheader
+length	common/seg.h	/^	unsigned short int length;    \/\/æ®µæ•°æ®é•¿åº¦$/;"	m	struct:stcp_hdr
+listen_to_neighbor	son/son.c	/^void* listen_to_neighbor(void* arg) {$/;"	f
+lock	client/IM_client.c	/^pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+lock	server/IM_server.c	/^pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+main	client/IM_client.c	/^int main(int argc, char *argv[])  $/;"	f
+main	client/app_simple_client.c	/^int main() {$/;"	f
+main	client/app_stress_client.c	/^int main() {$/;"	f
+main	server/IM_server.c	/^int main(int argc, char*argv[])$/;"	f
+main	server/app_simple_server.c	/^int main() {$/;"	f
+main	server/app_stress_server.c	/^int main() {$/;"	f
+main	sip/sip.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	son/son.c	/^int main() {$/;"	f
+makehash	sip/routingtable.c	/^int makehash(int node)$/;"	f
+msgbuf	server/IM_server.c	/^char msgbuf[MAXLINE];	\/\/public buffer$/;"	v
+msgid	server/IM_server.c	/^pthread_t msgid;$/;"	v
+myID	server/stcp_server.c	/^int myID;$/;"	v
+myNodeID	client/stcp_client.c	/^int myNodeID;$/;"	v
+myport	server/stcp_server.c	/^unsigned int myport;$/;"	v
+name	client/IM_client.c	/^char name[NAME_LENGTH];$/;"	v
+name	server/IM_server.c	/^	char name[NAME_LENGTH];$/;"	m	struct:USER	file:
+nbCount	topology/topology.c	/^int nbCount = 0;$/;"	v
+nbIdList	topology/topology.c	/^int * nbIdList;$/;"	v
+nbIpList	topology/topology.c	/^in_addr_t * nbIpList;$/;"	v
+nbn	sip/dvtable.c	/^int nbn=0;$/;"	v
+nbr_cost_entry_t	sip/nbrcosttable.h	/^} nbr_cost_entry_t;$/;"	t	typeref:struct:neighborcostentry
+nbr_entry_t	son/neighbortable.h	/^} nbr_entry_t;$/;"	t	typeref:struct:neighborentry
+nbrcosttable_create	sip/nbrcosttable.c	/^nbr_cost_entry_t* nbrcosttable_create()$/;"	f
+nbrcosttable_destroy	sip/nbrcosttable.c	/^void nbrcosttable_destroy(nbr_cost_entry_t* nct)$/;"	f
+nbrcosttable_getcost	sip/nbrcosttable.c	/^unsigned int nbrcosttable_getcost(nbr_cost_entry_t* nct, int nodeID)$/;"	f
+nbrcosttable_print	sip/nbrcosttable.c	/^void nbrcosttable_print(nbr_cost_entry_t* nct)$/;"	f
+nct	sip/sip.c	/^nbr_cost_entry_t* nct;			\/\/é‚»å±…ä»£ä»·è¡¨$/;"	v
+nct_nbCount	sip/nbrcosttable.c	/^int nct_nbCount=0;$/;"	v
+neighborcostentry	sip/nbrcosttable.h	/^typedef struct neighborcostentry {$/;"	s
+neighborentry	son/neighbortable.h	/^typedef struct neighborentry {$/;"	s
+next	client/stcp_client.h	/^        struct segBuf* next;$/;"	m	struct:segBuf	typeref:struct:segBuf::segBuf
+next	server/IM_server.c	/^	struct USER* next;$/;"	m	struct:USER	typeref:struct:USER::USER	file:
+next	sip/routingtable.h	/^	struct routingtable_entry* next;	\/\/æŒ‡å‘åœ¨åŒä¸€ä¸ªè·¯ç”±è¡¨æ§½ä¸­çš„ä¸‹ä¸€ä¸ªroutingtable_entry_t$/;"	m	struct:routingtable_entry	typeref:struct:routingtable_entry::routingtable_entry
+nextNodeID	common/pkt.h	/^  int nextNodeID;        \/\/ÏÂÒ»ÌøµÄ½ÚµãID$/;"	m	struct:sendpktargument
+nextNodeID	sip/routingtable.h	/^	int nextNodeID;		\/\/æŠ¥æ–‡åº”è¯¥è½¬å‘ç»™çš„ä¸‹ä¸€è·³èŠ‚ç‚¹ID$/;"	m	struct:routingtable_entry
+next_seqNum	client/stcp_client.h	/^	unsigned int next_seqNum;       \/\/ĞÂ¶Î×¼±¸Ê¹ÓÃµÄÏÂÒ»¸öĞòºÅ $/;"	m	struct:client_tcb
+next_seqNum	server/stcp_server.h	/^	unsigned int next_seqNum;       \/\/ĞÂ¶Î×¼±¸Ê¹ÓÃµÄÏÂÒ»¸öĞòºÅ $/;"	m	struct:server_tcb
+nodeID	common/pkt.h	/^        unsigned int nodeID;	\/\/Ä¿±ê½ÚµãID$/;"	m	struct:routeupdate_entry
+nodeID	common/seg.h	/^	int nodeID;		\/\/èŠ‚ç‚¹ID $/;"	m	struct:sendsegargument
+nodeID	sip/dvtable.h	/^	int nodeID;		        \/\/æºèŠ‚ç‚¹ID$/;"	m	struct:distancevector
+nodeID	sip/dvtable.h	/^	int nodeID;		    \/\/ç›®æ ‡èŠ‚ç‚¹ID	$/;"	m	struct:distancevectorentry
+nodeID	sip/nbrcosttable.h	/^	unsigned int nodeID;	\/\/é‚»å±…çš„èŠ‚ç‚¹ID$/;"	m	struct:neighborcostentry
+nodeID	son/neighbortable.h	/^  int nodeID;	        \/\/é‚»å±…çš„èŠ‚ç‚¹ID$/;"	m	struct:neighborentry
+nodeIP	son/neighbortable.h	/^  in_addr_t nodeIP;     \/\/é‚»å±…çš„IPåœ°å€$/;"	m	struct:neighborentry
+nt	son/son.c	/^nbr_entry_t* nt; $/;"	v
+nt_addconn	son/neighbortable.c	/^int nt_addconn(nbr_entry_t* nt, int nodeID, int conn)$/;"	f
+nt_create	son/neighbortable.c	/^nbr_entry_t* nt_create()$/;"	f
+nt_destroy	son/neighbortable.c	/^void nt_destroy(nbr_entry_t* nt)$/;"	f
+packet	common/pkt.h	/^typedef struct packet {$/;"	s
+pkt	common/pkt.h	/^  sip_pkt_t pkt;         \/\/Òª·¢ËÍµÄ±¨ÎÄ$/;"	m	struct:sendpktargument
+pkt_routeupdate_t	common/pkt.h	/^} pkt_routeupdate_t;$/;"	t	typeref:struct:pktrt
+pkthandler	sip/sip.c	/^void* pkthandler(void* arg) {$/;"	f
+pktrt	common/pkt.h	/^typedef struct pktrt{$/;"	s
+random	server/IM_server.c	14;"	d	file:
+rcv_win	common/seg.h	/^	unsigned short int  rcv_win;  \/\/å½“å‰æœªä½¿ç”¨$/;"	m	struct:stcp_hdr
+recvBuf	client/stcp_client.h	/^	char* recvBuf;$/;"	m	struct:client_tcb
+recvBuf	server/stcp_server.h	/^	char* recvBuf;                  \/\/Ö¸Ïò½ÓÊÕ»º³åÇøµÄÖ¸Õë$/;"	m	struct:server_tcb
+recvBufMutex	client/stcp_client.h	/^	pthread_mutex_t* recvBufMutex;$/;"	m	struct:client_tcb
+recvpkt	common/pkt.c	/^int recvpkt(sip_pkt_t* pkt, int conn)$/;"	f
+replyACK	client/stcp_client.c	/^void replyACK(client_tcb_t *recvTCB,int ackType) $/;"	f
+replyACK	server/stcp_server.c	/^void replyACK(seg_t *send,server_tcb_t *recvTCB,int ackType) $/;"	f
+routeupdate_daemon	sip/sip.c	/^void* routeupdate_daemon(void* arg) {$/;"	f
+routeupdate_entry	common/pkt.h	/^typedef struct routeupdate_entry {$/;"	s
+routeupdate_entry_t	common/pkt.h	/^} routeupdate_entry_t;$/;"	t	typeref:struct:routeupdate_entry
+routingtable	sip/routingtable.h	/^typedef struct routingtable {$/;"	s
+routingtable	sip/sip.c	/^routingtable_t* routingtable;		\/\/è·¯ç”±è¡¨$/;"	v
+routingtable_create	sip/routingtable.c	/^routingtable_t* routingtable_create()$/;"	f
+routingtable_destroy	sip/routingtable.c	/^void routingtable_destroy(routingtable_t* routingtable)$/;"	f
+routingtable_entry	sip/routingtable.h	/^typedef struct routingtable_entry {$/;"	s
+routingtable_entry_t	sip/routingtable.h	/^} routingtable_entry_t;$/;"	t	typeref:struct:routingtable_entry
+routingtable_getnextnode	sip/routingtable.c	/^int routingtable_getnextnode(routingtable_t* routingtable, int destNodeID)$/;"	f
+routingtable_mutex	sip/sip.c	/^pthread_mutex_t* routingtable_mutex;	\/\/è·¯ç”±è¡¨äº’æ–¥é‡$/;"	v
+routingtable_print	sip/routingtable.c	/^void routingtable_print(routingtable_t* routingtable)$/;"	f
+routingtable_setnextnode	sip/routingtable.c	/^void routingtable_setnextnode(routingtable_t* routingtable, int destNodeID, int nextNodeID)$/;"	f
+routingtable_t	sip/routingtable.h	/^} routingtable_t;$/;"	t	typeref:struct:routingtable
+seg	client/stcp_client.h	/^        seg_t seg;$/;"	m	struct:segBuf
+seg	common/seg.h	/^	seg_t seg;		\/\/ä¸€ä¸ªæ®µ $/;"	m	struct:sendsegargument
+segBuf	client/stcp_client.h	/^typedef struct segBuf {$/;"	s
+segBuf_t	client/stcp_client.h	/^} segBuf_t;$/;"	t	typeref:struct:segBuf
+seg_t	common/seg.h	/^} seg_t;$/;"	t	typeref:struct:segment
+seghandler	client/stcp_client.c	/^void* seghandler(void* arg) $/;"	f
+seghandler	server/stcp_server.c	/^void* seghandler(void* arg) $/;"	f
+seglost	common/seg.c	/^int seglost(seg_t* segPtr)$/;"	f
+segment	common/seg.h	/^typedef struct segment {$/;"	s
+sendBufHead	client/stcp_client.h	/^	segBuf_t* sendBufHead;          \/\/·¢ËÍ»º³åÇøÍ·$/;"	m	struct:client_tcb
+sendBufHead	server/stcp_server.h	/^	segBuf_t* sendBufHead;          \/\/·¢ËÍ»º³åÇøÍ·$/;"	m	struct:server_tcb
+sendBufMutex	server/stcp_server.h	/^	pthread_mutex_t* sendBufMutex;      \/\/·¢ËÍ»º³åÇø»¥³âÁ¿$/;"	m	struct:server_tcb
+sendBufTail	client/stcp_client.h	/^	segBuf_t* sendBufTail;          \/\/·¢ËÍ»º³åÇøÎ²$/;"	m	struct:client_tcb
+sendBufTail	server/stcp_server.h	/^	segBuf_t* sendBufTail;          \/\/·¢ËÍ»º³åÇøÎ²$/;"	m	struct:server_tcb
+sendBuf_timer	client/stcp_client.c	/^void* sendBuf_timer(void* clienttcb) $/;"	f
+sendBuf_timer	server/stcp_server.c	/^void* sendBuf_timer(void* clienttcb) $/;"	f
+sendBufunSent	client/stcp_client.h	/^	segBuf_t* sendBufunSent;        \/\/·¢ËÍ»º³åÇøÖĞµÄµÚÒ»¸öÎ´·¢ËÍ¶Î$/;"	m	struct:client_tcb
+sendBufunSent	server/stcp_server.h	/^	segBuf_t* sendBufunSent;        \/\/·¢ËÍ»º³åÇøÖĞµÄµÚÒ»¸öÎ´·¢ËÍ¶Î$/;"	m	struct:server_tcb
+sendpkt	common/pkt.c	/^int sendpkt(sip_pkt_t* pkt, int conn)$/;"	f
+sendpkt_arg_t	common/pkt.h	/^} sendpkt_arg_t;$/;"	t	typeref:struct:sendpktargument
+sendpktargument	common/pkt.h	/^typedef struct sendpktargument {$/;"	s
+sendseg_arg_t	common/seg.h	/^} sendseg_arg_t;$/;"	t	typeref:struct:sendsegargument
+sendsegargument	common/seg.h	/^typedef struct sendsegargument {$/;"	s
+sentTime	client/stcp_client.h	/^        unsigned int sentTime;$/;"	m	struct:segBuf
+seq_num	common/seg.h	/^	unsigned int seq_num;         \/\/åºå·$/;"	m	struct:stcp_hdr
+server_nodeID	client/stcp_client.h	/^	unsigned int server_nodeID;        \/\/·şÎñÆ÷½ÚµãID, ÀàËÆIPµØÖ·$/;"	m	struct:client_tcb
+server_nodeID	server/stcp_server.h	/^	unsigned int server_nodeID;        \/\/·şÎñÆ÷½ÚµãID, ÀàËÆIPµØÖ·$/;"	m	struct:server_tcb
+server_portNum	client/stcp_client.h	/^	unsigned int server_portNum;       \/\/·şÎñÆ÷¶Ë¿ÚºÅ$/;"	m	struct:client_tcb
+server_portNum	server/stcp_server.h	/^	unsigned int server_portNum;       \/\/·şÎñÆ÷¶Ë¿ÚºÅ$/;"	m	struct:server_tcb
+server_tcb	server/stcp_server.h	/^typedef struct server_tcb {$/;"	s
+server_tcb_t	server/stcp_server.h	/^} server_tcb_t;$/;"	t	typeref:struct:server_tcb
+sip_conn	client/stcp_client.c	/^int sip_conn;$/;"	v
+sip_conn	server/stcp_server.c	/^int sip_conn;$/;"	v
+sip_conn	son/son.c	/^int sip_conn; $/;"	v
+sip_hdr_t	common/pkt.h	/^} sip_hdr_t;$/;"	t	typeref:struct:sipheader
+sip_pkt_t	common/pkt.h	/^} sip_pkt_t;$/;"	t	typeref:struct:packet
+sip_recvseg	common/seg.c	/^int sip_recvseg(int sip_conn, int* src_nodeID, seg_t* segPtr)$/;"	f
+sip_sendseg	common/seg.c	/^int sip_sendseg(int sip_conn, int dest_nodeID, seg_t* segPtr)$/;"	f
+sip_stop	sip/sip.c	/^void sip_stop() {$/;"	f
+sipheader	common/pkt.h	/^typedef struct sipheader {$/;"	s
+smallCount	topology/topology.c	/^int smallCount = 0;$/;"	v
+sock	server/IM_server.c	/^	int sock;$/;"	m	struct:USER	file:
+son_conn	sip/sip.c	/^int son_conn; 			\/\/åˆ°é‡å ç½‘ç»œçš„è¿æ¥$/;"	v
+son_recvpkt	common/pkt.c	/^int son_recvpkt(sip_pkt_t* pkt, int son_conn)$/;"	f
+son_sendpkt	common/pkt.c	/^int son_sendpkt(int nextNodeID, sip_pkt_t* pkt, int son_conn)$/;"	f
+son_stop	son/son.c	/^void son_stop() {$/;"	f
+src_nodeID	common/pkt.h	/^  int src_nodeID;		          \/\/Ô´½ÚµãID$/;"	m	struct:sipheader
+src_port	common/seg.h	/^	unsigned int src_port;        \/\/æºç«¯å£å·$/;"	m	struct:stcp_hdr
+state	client/IM_client.c	/^int state=0;$/;"	v
+state	client/stcp_client.h	/^	unsigned int state;     	\/\/¿Í»§¶Ë×´Ì¬$/;"	m	struct:client_tcb
+state	server/IM_server.c	/^	int state;$/;"	m	struct:USER	file:
+state	server/stcp_server.h	/^	unsigned int state;         	\/\/·şÎñÆ÷×´Ì¬$/;"	m	struct:server_tcb
+stcp_client_close	client/stcp_client.c	/^int stcp_client_close(int sockfd) $/;"	f
+stcp_client_connect	client/stcp_client.c	/^int stcp_client_connect(int sockfd, int nodeID, unsigned int server_port) $/;"	f
+stcp_client_disconnect	client/stcp_client.c	/^int stcp_client_disconnect(int sockfd) $/;"	f
+stcp_client_init	client/stcp_client.c	/^void stcp_client_init(int conn) $/;"	f
+stcp_client_recv	client/stcp_client.c	/^int stcp_client_recv(int sockfd, void* buf, unsigned int length) $/;"	f
+stcp_client_send	client/stcp_client.c	/^int stcp_client_send(int sockfd, void* data, unsigned int length) $/;"	f
+stcp_client_sock	client/stcp_client.c	/^int stcp_client_sock(unsigned int client_port) $/;"	f
+stcp_conn	sip/sip.c	/^int stcp_conn;			\/\/åˆ°STCPçš„è¿æ¥$/;"	v
+stcp_hdr	common/seg.h	/^typedef struct stcp_hdr {$/;"	s
+stcp_hdr_t	common/seg.h	/^} stcp_hdr_t;$/;"	t	typeref:struct:stcp_hdr
+stcp_send	client/stcp_client.c	/^int stcp_send(int sockfd, void* data, unsigned int length) {$/;"	f
+stcp_send	server/stcp_server.c	/^int stcp_send(int sockfd, void* data, unsigned int length) {$/;"	f
+stcp_server_accept	server/stcp_server.c	/^int stcp_server_accept() $/;"	f
+stcp_server_close	server/stcp_server.c	/^int stcp_server_close(int sockfd) $/;"	f
+stcp_server_init	server/stcp_server.c	/^void stcp_server_init(int conn) $/;"	f
+stcp_server_recv	server/stcp_server.c	/^int stcp_server_recv(int sockfd, void* buf, unsigned int length) $/;"	f
+stcp_server_send	server/stcp_server.c	/^int stcp_server_send(int sockfd, void* data, unsigned int length) $/;"	f
+stcp_server_sock	server/stcp_server.c	/^int stcp_server_sock(unsigned int server_port) $/;"	f
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c client\/stcp_client.c -o client\/stcp_client.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c common\/pkt.c -o common\/pkt.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c common\/seg.c -o common\/seg.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c server\/stcp_server.c -o server\/stcp_server.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c sip\/dvtable.c -o sip\/dvtable.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c sip\/nbrcosttable.c -o sip\/nbrcosttable.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c sip\/routingtable.c -o sip\/routingtable.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c son\/neighbortable.c -o son\/neighbortable.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c topology\/topology.c -o topology\/topology.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread client\/app_simple_client.c common\/seg.o client\/stcp_client.o topology\/topology.o -o client\/app_simple_client $/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread client\/app_stress_client.c common\/seg.o client\/stcp_client.o topology\/topology.o -o client\/app_stress_client $/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread server\/app_simple_server.c common\/seg.o server\/stcp_server.o topology\/topology.o -o server\/app_simple_server$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread server\/app_stress_server.c common\/seg.o server\/stcp_server.o topology\/topology.o -o server\/app_stress_server$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread sip\/nbrcosttable.o sip\/dvtable.o sip\/routingtable.o common\/pkt.o common\/seg.o topology\/topology.o sip\/sip.c -o sip\/sip $/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread son\/son.c topology\/topology.o common\/pkt.o son\/neighbortable.o -o son\/son$/;"	m
+tcbtable	server/stcp_server.c	/^server_tcb_t* tcbtable[MAX_TRANSPORT_CONNECTIONS];$/;"	v
+thread	server/stcp_server.c	/^pthread_t thread;$/;"	v
+topology_getCost	topology/topology.c	/^unsigned int topology_getCost(int fromNodeID, int toNodeID)$/;"	f
+topology_getMyNodeID	topology/topology.c	/^int topology_getMyNodeID()$/;"	f
+topology_getNbrArray	topology/topology.c	/^int* topology_getNbrArray()$/;"	f
+topology_getNbrCost	topology/topology.c	/^int * topology_getNbrCost()$/;"	f
+topology_getNbrIpArray	topology/topology.c	/^in_addr_t * topology_getNbrIpArray()$/;"	f
+topology_getNbrNum	topology/topology.c	/^int topology_getNbrNum()$/;"	f
+topology_getNodeArray	topology/topology.c	/^int* topology_getNodeArray()$/;"	f
+topology_getNodeIDfromip	topology/topology.c	/^int topology_getNodeIDfromip(struct in_addr* addr)$/;"	f
+topology_getNodeIDfromname	topology/topology.c	/^int topology_getNodeIDfromname(char* hostname) $/;"	f
+topology_getNodeIPfromname	topology/topology.c	/^in_addr_t topology_getNodeIPfromname(char *name)$/;"	f
+topology_getNodeNum	topology/topology.c	/^int topology_getNodeNum()$/;"	f
+type	common/pkt.h	/^  unsigned short int type;	      \/\/±¨ÎÄÀàĞÍ $/;"	m	struct:sipheader
+type	common/seg.h	/^	unsigned short int  type;     \/\/æ®µç±»å‹$/;"	m	struct:stcp_hdr
+unAck_segNum	client/stcp_client.h	/^	unsigned int unAck_segNum;      \/\/ÒÑ·¢ËÍµ«Î´ÊÕµ½È·ÈÏ¶ÎµÄÊıÁ¿$/;"	m	struct:client_tcb
+unAck_segNum	server/stcp_server.h	/^	unsigned int unAck_segNum;      \/\/ÒÑ·¢ËÍµ«Î´ÊÕµ½È·ÈÏ¶ÎµÄÊıÁ¿$/;"	m	struct:server_tcb
+usedBufLen	client/stcp_client.h	/^	unsigned int usedBufLen;$/;"	m	struct:client_tcb
+usedBufLen	server/stcp_server.h	/^	unsigned int  usedBufLen;       \/\/½ÓÊÕ»º³åÇøÖĞÒÑ½ÓÊÕÊı¾İµÄ´óĞ¡$/;"	m	struct:server_tcb
+user	server/IM_server.c	/^}user;$/;"	t	typeref:struct:USER	file:
+userCount	server/IM_server.c	/^int userCount=0;$/;"	v
+usrlock	server/IM_server.c	/^	pthread_mutex_t usrlock;$/;"	m	struct:USER	file:
+waitNbrs	son/son.c	/^void* waitNbrs(void* arg) {$/;"	f
+waitSIP	son/son.c	/^void waitSIP() {$/;"	f
+waitSTCP	sip/sip.c	/^void waitSTCP() {$/;"	f

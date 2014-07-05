@@ -1,0 +1,25 @@
+
+你需要根据实验讲义的要求实现各个目录下源文件中的函数. 其中一些函数你已在前面的实验中实现过了. 
+client目录和server目录下提供的app_{simple/stress}_{client/server}.c文件用于测试.  
+
+编译和运行的方法:
+
+使用了四台主机: csnetlab_1, csnetlab_2, csnetlab_3, csnetlab_4
+
+使用make命令编译. 
+为了运行程序:
+1. 启动重叠网络进程:
+	在每个节点上, 进入son目录并运行./son&
+	4个节点上的son进程应在1分钟内启动好.
+	等待直到你在所有节点上看到: waiting for connection from SIP process.
+2. 启动网络进程: 
+	在每个节点上, 进入sip目录并运行./sip&
+	等待直到你在所有节点上看到: waiting for connection from STCP process.
+3. 启动传输层并运行应用程序:
+	在一个节点上, 进入server目录并运行./app_simple_app或./app_stress_app
+	在另一个节点上, 进入client目录并运行./app_simple_app或./app_stress_app
+
+为了终止程序:
+使用"kill -s 2 进程号"杀掉son进程和sip进程.
+
+如果程序使用的端口号已被使用, 程序将退出.

@@ -1,0 +1,143 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ACCEPT_POLLING_INTERVAL	common/constants.h	36;"	d
+CLIENTPORT1	client/app_simple_client.c	27;"	d	file:
+CLIENTPORT1	client/app_stress_client.c	28;"	d	file:
+CLIENTPORT1	server/app_simple_server.c	28;"	d	file:
+CLIENTPORT1	server/app_stress_server.c	29;"	d	file:
+CLIENTPORT2	client/app_simple_client.c	29;"	d	file:
+CLIENTPORT2	server/app_simple_server.c	30;"	d	file:
+CLOSED	client/stcp_client.h	15;"	d
+CLOSED	server/stcp_server.h	16;"	d
+CLOSEWAIT	server/stcp_server.h	19;"	d
+CLOSEWAIT_TIMEOUT	common/constants.h	30;"	d
+CONNECTED	client/stcp_client.h	17;"	d
+CONNECTED	server/stcp_server.h	18;"	d
+CONSTANTS_H	common/constants.h	8;"	d
+DATA	common/seg.h	18;"	d
+DATAACK	common/seg.h	19;"	d
+DATA_TIMEOUT	common/constants.h	40;"	d
+FIN	common/seg.h	16;"	d
+FINACK	common/seg.h	17;"	d
+FINWAIT	client/stcp_client.h	18;"	d
+FIN_MAX_RETRY	common/constants.h	28;"	d
+FIN_TIMEOUT	common/constants.h	24;"	d
+GBN_WINDOW	common/constants.h	42;"	d
+LISTENING	server/stcp_server.h	17;"	d
+MAX_SEG_LEN	common/constants.h	18;"	d
+MAX_SEQNUM	common/constants.h	15;"	d
+MAX_TRANSPORT_CONNECTIONS	common/constants.h	13;"	d
+PKT_LOSS_RATE	common/constants.h	20;"	d
+RECEIVE_BUF_SIZE	common/constants.h	38;"	d
+RECVBUF_POLLING_INTERVAL	common/constants.h	34;"	d
+SEGRECV	common/seg.h	23;"	d
+SEGSTART1	common/seg.h	21;"	d
+SEGSTART2	common/seg.h	22;"	d
+SEGSTOP1	common/seg.h	24;"	d
+SEG_H	common/seg.h	9;"	d
+SENDBUF_POLLING_INTERVAL	common/constants.h	32;"	d
+SERVERPORT1	client/app_simple_client.c	28;"	d	file:
+SERVERPORT1	client/app_stress_client.c	29;"	d	file:
+SERVERPORT1	server/app_simple_server.c	29;"	d	file:
+SERVERPORT1	server/app_stress_server.c	30;"	d	file:
+SERVERPORT2	client/app_simple_client.c	30;"	d	file:
+SERVERPORT2	server/app_simple_server.c	31;"	d	file:
+SON_PORT	common/constants.h	11;"	d
+STCPCLIENT_H	client/stcp_client.h	9;"	d
+STCPSERVER_H	server/stcp_server.h	9;"	d
+SYN	common/seg.h	14;"	d
+SYNACK	common/seg.h	15;"	d
+SYNSENT	client/stcp_client.h	16;"	d
+SYN_MAX_RETRY	common/constants.h	26;"	d
+SYN_TIMEOUT	common/constants.h	22;"	d
+TCBTable	client/stcp_client.c	/^client_tcb_t *TCBTable[MAX_TRANSPORT_CONNECTIONS];$/;"	v
+WAITTIME	client/app_simple_client.c	33;"	d	file:
+WAITTIME	client/app_stress_client.c	32;"	d	file:
+WAITTIME	server/app_simple_server.c	33;"	d	file:
+WAITTIME	server/app_stress_server.c	32;"	d	file:
+ack_num	common/seg.h	/^	unsigned int ack_num;         \/\/ç¡®è®¤å·$/;"	m	struct:stcp_hdr
+bufMutex	client/stcp_client.h	/^	pthread_mutex_t* bufMutex;      \/\/·¢ËÍ»º³åÇø»¥³âÁ¿$/;"	m	struct:client_tcb
+bufMutex	server/stcp_server.h	/^	pthread_mutex_t* bufMutex;      \/\/æŒ‡å‘ä¸€ä¸ªäº’æ–¥é‡çš„æŒ‡é’ˆ, è¯¥äº’æ–¥é‡ç”¨äºå¯¹æ¥æ”¶ç¼“å†²åŒºçš„è®¿é—®$/;"	m	struct:server_tcb
+checkchecksum	common/seg.c	/^int checkchecksum(seg_t* segment)$/;"	f
+checksum	common/seg.c	/^unsigned short checksum(seg_t* segment)$/;"	f
+checksum	common/seg.h	/^	unsigned short int checksum;  \/\/è¿™ä¸ªæ®µçš„æ ¡éªŒå’Œ$/;"	m	struct:stcp_hdr
+client_nodeID	client/stcp_client.h	/^	unsigned int client_nodeID;     \/\/¿Í»§¶Ë½ÚµãID, ÀàËÆIPµØÖ·, µ±Ç°Î´Ê¹ÓÃ$/;"	m	struct:client_tcb
+client_nodeID	server/stcp_server.h	/^	unsigned int client_nodeID;     \/\/å®¢æˆ·ç«¯èŠ‚ç‚¹ID, ç±»ä¼¼IPåœ°å€, å½“å‰æœªä½¿ç”¨$/;"	m	struct:server_tcb
+client_portNum	client/stcp_client.h	/^	unsigned int client_portNum;    \/\/¿Í»§¶Ë¶Ë¿ÚºÅ$/;"	m	struct:client_tcb
+client_portNum	server/stcp_server.h	/^	unsigned int client_portNum;    \/\/å®¢æˆ·ç«¯ç«¯å£å·$/;"	m	struct:server_tcb
+client_tcb	client/stcp_client.h	/^typedef struct client_tcb {$/;"	s
+client_tcb_t	client/stcp_client.h	/^} client_tcb_t;$/;"	t	typeref:struct:client_tcb
+data	common/seg.h	/^	char data[MAX_SEG_LEN];$/;"	m	struct:segment
+dest_port	common/seg.h	/^	unsigned int dest_port;       \/\/ç›®çš„ç«¯å£å·$/;"	m	struct:stcp_hdr
+expect_seqNum	server/stcp_server.h	/^	unsigned int expect_seqNum;     \/\/æœåŠ¡å™¨æœŸå¾…çš„æ•°æ®åºå·	$/;"	m	struct:server_tcb
+g_son_conn	server/stcp_server.c	/^int g_son_conn;$/;"	v
+header	common/seg.h	/^	stcp_hdr_t header;$/;"	m	struct:segment
+length	common/seg.h	/^	unsigned short int length;    \/\/æ®µæ•°æ®é•¿åº¦$/;"	m	struct:stcp_hdr
+main	client/app_simple_client.c	/^int main() {$/;"	f
+main	client/app_stress_client.c	/^int main() {$/;"	f
+main	server/app_simple_server.c	/^int main() {$/;"	f
+main	server/app_stress_server.c	/^int main() {$/;"	f
+next	client/stcp_client.h	/^        struct segBuf* next;$/;"	m	struct:segBuf	typeref:struct:segBuf::segBuf
+next_seqNum	client/stcp_client.h	/^	unsigned int next_seqNum;       \/\/ĞÂ¶Î×¼±¸Ê¹ÓÃµÄÏÂÒ»¸öĞòºÅ $/;"	m	struct:client_tcb
+rc	client/stcp_client.c	/^int rc;$/;"	v
+rcv_win	common/seg.h	/^	unsigned short int  rcv_win;  \/\/å½“å‰æœªä½¿ç”¨$/;"	m	struct:stcp_hdr
+recvBuf	server/stcp_server.h	/^	char* recvBuf;                  \/\/æŒ‡å‘æ¥æ”¶ç¼“å†²åŒºçš„æŒ‡é’ˆ$/;"	m	struct:server_tcb
+replyACK	server/stcp_server.c	/^void replyACK(seg_t *recv,seg_t *send,server_tcb_t *recvTCB,int ackType) $/;"	f
+s_TCBTable	server/stcp_server.c	/^server_tcb_t *s_TCBTable[MAX_TRANSPORT_CONNECTIONS];$/;"	v
+seg	client/stcp_client.h	/^        seg_t seg;$/;"	m	struct:segBuf
+segBuf	client/stcp_client.h	/^typedef struct segBuf {$/;"	s
+segBuf_t	client/stcp_client.h	/^} segBuf_t;$/;"	t	typeref:struct:segBuf
+seg_t	common/seg.h	/^} seg_t;$/;"	t	typeref:struct:segment
+seghandler	client/stcp_client.c	/^void *seghandler(void* arg) {	$/;"	f
+seghandler	server/stcp_server.c	/^void* seghandler(void* arg)$/;"	f
+seglost	common/seg.c	/^int seglost(seg_t* segPtr) {$/;"	f
+segment	common/seg.h	/^typedef struct segment {$/;"	s
+sendBufHead	client/stcp_client.h	/^	segBuf_t* sendBufHead;          \/\/·¢ËÍ»º³åÇøÍ·$/;"	m	struct:client_tcb
+sendBufTail	client/stcp_client.h	/^	segBuf_t* sendBufTail;          \/\/·¢ËÍ»º³åÇøÎ²$/;"	m	struct:client_tcb
+sendBuf_timer	client/stcp_client.c	/^void* sendBuf_timer(void* clienttcb){$/;"	f
+sendBufunSent	client/stcp_client.h	/^	segBuf_t* sendBufunSent;        \/\/·¢ËÍ»º³åÇøÖĞµÄµÚÒ»¸öÎ´·¢ËÍ¶Î$/;"	m	struct:client_tcb
+sentTime	client/stcp_client.h	/^        unsigned int sentTime;$/;"	m	struct:segBuf
+seq_num	common/seg.h	/^	unsigned int seq_num;         \/\/åºå·$/;"	m	struct:stcp_hdr
+server_nodeID	client/stcp_client.h	/^	unsigned int server_nodeID;        \/\/·şÎñÆ÷½ÚµãID, ÀàËÆIPµØÖ·, µ±Ç°Î´Ê¹ÓÃ$/;"	m	struct:client_tcb
+server_nodeID	server/stcp_server.h	/^	unsigned int server_nodeID;     \/\/æœåŠ¡å™¨èŠ‚ç‚¹ID, ç±»ä¼¼IPåœ°å€, å½“å‰æœªä½¿ç”¨$/;"	m	struct:server_tcb
+server_portNum	client/stcp_client.h	/^	unsigned int server_portNum;       \/\/·şÎñÆ÷¶Ë¿ÚºÅ$/;"	m	struct:client_tcb
+server_portNum	server/stcp_server.h	/^	unsigned int server_portNum;    \/\/æœåŠ¡å™¨ç«¯å£å·$/;"	m	struct:server_tcb
+server_tcb	server/stcp_server.h	/^typedef struct server_tcb {$/;"	s
+server_tcb_t	server/stcp_server.h	/^} server_tcb_t;$/;"	t	typeref:struct:server_tcb
+sip_recvseg	common/seg.c	/^int sip_recvseg(int connection, seg_t* segPtr)$/;"	f
+sip_sendseg	common/seg.c	/^int sip_sendseg(int connection, seg_t* segPtr)$/;"	f
+son_conn	client/stcp_client.c	/^int son_conn;$/;"	v
+son_start	client/app_simple_client.c	/^int son_start() {$/;"	f
+son_start	client/app_stress_client.c	/^int son_start() {$/;"	f
+son_start	server/app_simple_server.c	/^int son_start() {$/;"	f
+son_start	server/app_stress_server.c	/^int son_start() {$/;"	f
+son_stop	client/app_simple_client.c	/^void son_stop(int son_conn) {$/;"	f
+son_stop	client/app_stress_client.c	/^void son_stop(int son_conn) {$/;"	f
+son_stop	server/app_simple_server.c	/^void son_stop(int son_conn) {$/;"	f
+son_stop	server/app_stress_server.c	/^void son_stop(int son_conn) {$/;"	f
+src_port	common/seg.h	/^	unsigned int src_port;        \/\/æºç«¯å£å·$/;"	m	struct:stcp_hdr
+state	client/stcp_client.h	/^	unsigned int state;     	\/\/¿Í»§¶Ë×´Ì¬$/;"	m	struct:client_tcb
+state	server/stcp_server.h	/^	unsigned int state;         	\/\/æœåŠ¡å™¨çŠ¶æ€$/;"	m	struct:server_tcb
+status	client/stcp_client.c	/^void * status;$/;"	v
+stcp_client_close	client/stcp_client.c	/^int stcp_client_close(int sockfd) {$/;"	f
+stcp_client_connect	client/stcp_client.c	/^int stcp_client_connect(int sockfd, unsigned int server_port) {$/;"	f
+stcp_client_disconnect	client/stcp_client.c	/^int stcp_client_disconnect(int sockfd) {$/;"	f
+stcp_client_init	client/stcp_client.c	/^void stcp_client_init(int conn) {$/;"	f
+stcp_client_send	client/stcp_client.c	/^int stcp_client_send(int sockfd, void* data, unsigned int length) {$/;"	f
+stcp_client_sock	client/stcp_client.c	/^int stcp_client_sock(unsigned int client_port) {$/;"	f
+stcp_hdr	common/seg.h	/^typedef struct stcp_hdr {$/;"	s
+stcp_hdr_t	common/seg.h	/^} stcp_hdr_t;$/;"	t	typeref:struct:stcp_hdr
+stcp_server_accept	server/stcp_server.c	/^int stcp_server_accept(int sockfd)$/;"	f
+stcp_server_close	server/stcp_server.c	/^int stcp_server_close(int sockfd)$/;"	f
+stcp_server_init	server/stcp_server.c	/^void stcp_server_init(int conn)$/;"	f
+stcp_server_recv	server/stcp_server.c	/^int stcp_server_recv(int sockfd, void* buf, unsigned int length)$/;"	f
+stcp_server_sock	server/stcp_server.c	/^int stcp_server_sock(unsigned int server_port)$/;"	f
+thread	client/stcp_client.c	/^pthread_t thread;		$/;"	v
+thread	server/stcp_server.c	/^pthread_t thread;$/;"	v
+type	common/seg.h	/^	unsigned short int  type;     \/\/æ®µç±»å‹$/;"	m	struct:stcp_hdr
+unAck_segNum	client/stcp_client.h	/^	unsigned int unAck_segNum;      \/\/ÒÑ·¢ËÍµ«Î´ÊÕµ½È·ÈÏ¶ÎµÄÊıÁ¿$/;"	m	struct:client_tcb
+usedBufLen	server/stcp_server.h	/^	unsigned int  usedBufLen;       \/\/æ¥æ”¶ç¼“å†²åŒºä¸­å·²æ¥æ”¶æ•°æ®çš„å¤§å°$/;"	m	struct:server_tcb

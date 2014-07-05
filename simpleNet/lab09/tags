@@ -1,0 +1,102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BROADCAST_NODEID	common/constants.h	33;"	d
+CONNECTION_PORT	common/constants.h	15;"	d
+CONSTANTS_H	common/constants.h	8;"	d
+INFINITE_COST	common/constants.h	30;"	d
+MAX_NODE_NUM	common/constants.h	27;"	d
+MAX_PKT_LEN	common/constants.h	21;"	d
+NEIGHBORTABLE_H	son/neighbortable.h	8;"	d
+NETWORK_H	sip/sip.h	8;"	d
+PKTRECV	common/pkt.c	11;"	d	file:
+PKTSTART1	common/pkt.c	9;"	d	file:
+PKTSTART2	common/pkt.c	10;"	d	file:
+PKTSTOP1	common/pkt.c	12;"	d	file:
+PKT_H	common/pkt.h	2;"	d
+ROUTEUPDATE_INTERVAL	common/constants.h	36;"	d
+ROUTE_UPDATE	common/pkt.h	7;"	d
+SIP	common/pkt.h	8;"	d
+SON_H	son/son.h	8;"	d
+SON_PORT	common/constants.h	18;"	d
+SON_START_DELAY	son/son.c	30;"	d	file:
+TOPOLOGY_H	topology/topology.h	8;"	d
+allCount	topology/topology.c	/^int allCount = 0;$/;"	v
+allIdList	topology/topology.c	/^int * allIdList;$/;"	v
+bigCount	topology/topology.c	/^int bigCount = 0;$/;"	v
+conn	son/neighbortable.h	/^  int conn;	            \/\/针对这个邻居的TCP连接套接字描述符$/;"	m	struct:neighborentry
+connectNbrs	son/son.c	/^int connectNbrs() {$/;"	f
+connectToSON	sip/sip.c	/^int connectToSON() { $/;"	f
+cost	common/pkt.h	/^        unsigned int cost;	    \/\/从源节点(报文首部中的src_nodeID)到目标节点的链路代价$/;"	m	struct:routeupdate_entry
+costList	topology/topology.c	/^int * costList;$/;"	v
+data	common/pkt.h	/^  char data[MAX_PKT_LEN];$/;"	m	struct:packet
+dest_nodeID	common/pkt.h	/^  int dest_nodeID;		          \/\/目标节点ID$/;"	m	struct:sipheader
+entry	common/pkt.h	/^        routeupdate_entry_t entry[MAX_NODE_NUM];$/;"	m	struct:pktrt
+entryNum	common/pkt.h	/^        unsigned int entryNum;	\/\/这个路由更新报文中包含的条目数$/;"	m	struct:pktrt
+forwardpktToSIP	common/pkt.c	/^int forwardpktToSIP(sip_pkt_t* pkt, int sip_conn)$/;"	f
+getBigCount	topology/topology.c	/^int getBigCount()$/;"	f
+getSmallCount	topology/topology.c	/^int getSmallCount()$/;"	f
+getTopoData	topology/topology.c	/^void getTopoData()$/;"	f
+getpktToSend	common/pkt.c	/^int getpktToSend(sip_pkt_t* pkt, int* nextNode,int sip_conn)$/;"	f
+header	common/pkt.h	/^  sip_hdr_t header;$/;"	m	struct:packet
+length	common/pkt.h	/^  unsigned short int length;	  \/\/报文中数据的长度$/;"	m	struct:sipheader
+listen_to_neighbor	son/son.c	/^void* listen_to_neighbor(void* arg) {$/;"	f
+main	sip/sip.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	son/son.c	/^int main() {$/;"	f
+nbCount	topology/topology.c	/^int nbCount = 0;$/;"	v
+nbIdList	topology/topology.c	/^int * nbIdList;$/;"	v
+nbIpList	topology/topology.c	/^in_addr_t * nbIpList;$/;"	v
+nbr_entry_t	son/neighbortable.h	/^} nbr_entry_t;$/;"	t	typeref:struct:neighborentry
+neighborentry	son/neighbortable.h	/^typedef struct neighborentry {$/;"	s
+nextNodeID	common/pkt.h	/^  int nextNodeID;        \/\/下一跳的节点ID$/;"	m	struct:sendpktargument
+nodeID	common/pkt.h	/^        unsigned int nodeID;	\/\/目标节点ID$/;"	m	struct:routeupdate_entry
+nodeID	son/neighbortable.h	/^  int nodeID;	        \/\/邻居的节点ID$/;"	m	struct:neighborentry
+nodeIP	son/neighbortable.h	/^  in_addr_t nodeIP;     \/\/邻居的IP地址$/;"	m	struct:neighborentry
+nt	son/son.c	/^nbr_entry_t* nt; $/;"	v
+nt_addconn	son/neighbortable.c	/^int nt_addconn(nbr_entry_t* nt, int nodeID, int conn)$/;"	f
+nt_create	son/neighbortable.c	/^nbr_entry_t* nt_create()$/;"	f
+nt_destroy	son/neighbortable.c	/^void nt_destroy(nbr_entry_t* nt)$/;"	f
+packet	common/pkt.h	/^typedef struct packet {$/;"	s
+pkt	common/pkt.h	/^  sip_pkt_t pkt;         \/\/要发送的报文$/;"	m	struct:sendpktargument
+pkt_routeupdate_t	common/pkt.h	/^} pkt_routeupdate_t;$/;"	t	typeref:struct:pktrt
+pkthandler	sip/sip.c	/^void* pkthandler(void* arg) {$/;"	f
+pktrt	common/pkt.h	/^typedef struct pktrt{$/;"	s
+recvpkt	common/pkt.c	/^int recvpkt(sip_pkt_t* pkt, int conn)$/;"	f
+routeupdate_daemon	sip/sip.c	/^void* routeupdate_daemon(void* arg) {$/;"	f
+routeupdate_entry	common/pkt.h	/^typedef struct routeupdate_entry {$/;"	s
+routeupdate_entry_t	common/pkt.h	/^} routeupdate_entry_t;$/;"	t	typeref:struct:routeupdate_entry
+sendpkt	common/pkt.c	/^int sendpkt(sip_pkt_t* pkt, int conn)$/;"	f
+sendpkt_arg_t	common/pkt.h	/^} sendpkt_arg_t;$/;"	t	typeref:struct:sendpktargument
+sendpktargument	common/pkt.h	/^typedef struct sendpktargument {$/;"	s
+sip_conn	son/son.c	/^int sip_conn; $/;"	v
+sip_hdr_t	common/pkt.h	/^} sip_hdr_t;$/;"	t	typeref:struct:sipheader
+sip_pkt_t	common/pkt.h	/^} sip_pkt_t;$/;"	t	typeref:struct:packet
+sip_stop	sip/sip.c	/^void sip_stop() {$/;"	f
+sipheader	common/pkt.h	/^typedef struct sipheader {$/;"	s
+smallCount	topology/topology.c	/^int smallCount = 0;$/;"	v
+son_conn	sip/sip.c	/^int son_conn; 		\/\/到重叠网络的连接$/;"	v
+son_recvpkt	common/pkt.c	/^int son_recvpkt(sip_pkt_t* pkt, int son_conn)$/;"	f
+son_sendpkt	common/pkt.c	/^int son_sendpkt(int nextNodeID, sip_pkt_t* pkt, int son_conn)$/;"	f
+son_stop	son/son.c	/^void son_stop() {$/;"	f
+src_nodeID	common/pkt.h	/^  int src_nodeID;		          \/\/源节点ID$/;"	m	struct:sipheader
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c common\/pkt.c -o common\/pkt.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c son\/neighbortable.c -o son\/neighbortable.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -c topology\/topology.c -o topology\/topology.o$/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread common\/pkt.o topology\/topology.o sip\/sip.c -o sip\/sip $/;"	m
+std	Makefile	/^	gcc -Wall -pedantic -std=c99 -g -pthread son\/son.c topology\/topology.o common\/pkt.o son\/neighbortable.o -o son\/son$/;"	m
+topology_getCost	topology/topology.c	/^unsigned int topology_getCost(int fromNodeID, int toNodeID)$/;"	f
+topology_getMyNodeID	topology/topology.c	/^int topology_getMyNodeID()$/;"	f
+topology_getNbrArray	topology/topology.c	/^int* topology_getNbrArray()$/;"	f
+topology_getNbrIpArray	topology/topology.c	/^in_addr_t * topology_getNbrIpArray()$/;"	f
+topology_getNbrNum	topology/topology.c	/^int topology_getNbrNum()$/;"	f
+topology_getNodeArray	topology/topology.c	/^int* topology_getNodeArray()$/;"	f
+topology_getNodeIDfromip	topology/topology.c	/^int topology_getNodeIDfromip(struct in_addr* addr)$/;"	f
+topology_getNodeIDfromname	topology/topology.c	/^int topology_getNodeIDfromname(char* hostname) $/;"	f
+topology_getNodeIPfromname	topology/topology.c	/^in_addr_t topology_getNodeIPfromname(char *name)$/;"	f
+topology_getNodeNum	topology/topology.c	/^int topology_getNodeNum()$/;"	f
+type	common/pkt.h	/^  unsigned short int type;	      \/\/报文类型 $/;"	m	struct:sipheader
+waitNbrs	son/son.c	/^void* waitNbrs(void* arg) {$/;"	f
+waitSIP	son/son.c	/^void waitSIP() {$/;"	f

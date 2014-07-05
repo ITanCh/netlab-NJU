@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CLIENTPORT1	app_simple_client.c	27;"	d	file:
+CLIENTPORT1	app_stress_client.c	28;"	d	file:
+CLIENTPORT2	app_simple_client.c	29;"	d	file:
+CLOSED	stcp_client.h	15;"	d
+CONNECTED	stcp_client.h	17;"	d
+FINWAIT	stcp_client.h	18;"	d
+SERVERPORT1	app_simple_client.c	28;"	d	file:
+SERVERPORT1	app_stress_client.c	29;"	d	file:
+SERVERPORT2	app_simple_client.c	30;"	d	file:
+STCPCLIENT_H	stcp_client.h	9;"	d
+SYNSENT	stcp_client.h	16;"	d
+TCBTable	stcp_client.c	/^client_tcb_t *TCBTable[MAX_TRANSPORT_CONNECTIONS];$/;"	v
+WAITTIME	app_simple_client.c	33;"	d	file:
+WAITTIME	app_stress_client.c	32;"	d	file:
+bufMutex	stcp_client.h	/^	pthread_mutex_t* bufMutex;      \/\/发送缓冲区互斥量$/;"	m	struct:client_tcb
+client_nodeID	stcp_client.h	/^	unsigned int client_nodeID;     \/\/客户端节点ID, 类似IP地址, 当前未使用$/;"	m	struct:client_tcb
+client_portNum	stcp_client.h	/^	unsigned int client_portNum;    \/\/客户端端口号$/;"	m	struct:client_tcb
+client_tcb	stcp_client.h	/^typedef struct client_tcb {$/;"	s
+client_tcb_t	stcp_client.h	/^} client_tcb_t;$/;"	t	typeref:struct:client_tcb
+main	app_simple_client.c	/^int main() {$/;"	f
+main	app_stress_client.c	/^int main() {$/;"	f
+next	stcp_client.h	/^        struct segBuf* next;$/;"	m	struct:segBuf	typeref:struct:segBuf::segBuf
+next_seqNum	stcp_client.h	/^	unsigned int next_seqNum;       \/\/新段准备使用的下一个序号 $/;"	m	struct:client_tcb
+rc	stcp_client.c	/^int rc;$/;"	v
+seg	stcp_client.h	/^        seg_t seg;$/;"	m	struct:segBuf
+segBuf	stcp_client.h	/^typedef struct segBuf {$/;"	s
+segBuf_t	stcp_client.h	/^} segBuf_t;$/;"	t	typeref:struct:segBuf
+seghandler	stcp_client.c	/^void *seghandler(void* arg) {	$/;"	f
+sendBufHead	stcp_client.h	/^	segBuf_t* sendBufHead;          \/\/发送缓冲区头$/;"	m	struct:client_tcb
+sendBufTail	stcp_client.h	/^	segBuf_t* sendBufTail;          \/\/发送缓冲区尾$/;"	m	struct:client_tcb
+sendBuf_timer	stcp_client.c	/^void* sendBuf_timer(void* clienttcb){$/;"	f
+sendBufunSent	stcp_client.h	/^	segBuf_t* sendBufunSent;        \/\/发送缓冲区中的第一个未发送段$/;"	m	struct:client_tcb
+sentTime	stcp_client.h	/^        unsigned int sentTime;$/;"	m	struct:segBuf
+server_nodeID	stcp_client.h	/^	unsigned int server_nodeID;        \/\/服务器节点ID, 类似IP地址, 当前未使用$/;"	m	struct:client_tcb
+server_portNum	stcp_client.h	/^	unsigned int server_portNum;       \/\/服务器端口号$/;"	m	struct:client_tcb
+son_conn	stcp_client.c	/^int son_conn;$/;"	v
+son_start	app_simple_client.c	/^int son_start() {$/;"	f
+son_start	app_stress_client.c	/^int son_start() {$/;"	f
+son_stop	app_simple_client.c	/^void son_stop(int son_conn) {$/;"	f
+son_stop	app_stress_client.c	/^void son_stop(int son_conn) {$/;"	f
+state	stcp_client.h	/^	unsigned int state;     	\/\/客户端状态$/;"	m	struct:client_tcb
+status	stcp_client.c	/^void * status;$/;"	v
+stcp_client_close	stcp_client.c	/^int stcp_client_close(int sockfd) {$/;"	f
+stcp_client_connect	stcp_client.c	/^int stcp_client_connect(int sockfd, unsigned int server_port) {$/;"	f
+stcp_client_disconnect	stcp_client.c	/^int stcp_client_disconnect(int sockfd) {$/;"	f
+stcp_client_init	stcp_client.c	/^void stcp_client_init(int conn) {$/;"	f
+stcp_client_send	stcp_client.c	/^int stcp_client_send(int sockfd, void* data, unsigned int length) {$/;"	f
+stcp_client_sock	stcp_client.c	/^int stcp_client_sock(unsigned int client_port) {$/;"	f
+thread	stcp_client.c	/^pthread_t thread,timer_thread;		$/;"	v
+timer_thread	stcp_client.c	/^pthread_t thread,timer_thread;		$/;"	v
+unAck_segNum	stcp_client.h	/^	unsigned int unAck_segNum;      \/\/已发送但未收到确认段的数量$/;"	m	struct:client_tcb

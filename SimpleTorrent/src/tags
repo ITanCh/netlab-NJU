@@ -1,0 +1,154 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BE_DICT	bencode.h	/^	BE_DICT,$/;"	e	enum:__anon1
+BE_INT	bencode.h	/^	BE_INT,$/;"	e	enum:__anon1
+BE_LIST	bencode.h	/^	BE_LIST,$/;"	e	enum:__anon1
+BE_STR	bencode.h	/^	BE_STR,$/;"	e	enum:__anon1
+BTDATA_H	btdata.h	6;"	d
+BT_COMPLETED	btdata.h	22;"	d
+BT_STARTED	btdata.h	20;"	d
+BT_STOPPED	btdata.h	21;"	d
+Computed	sha1.h	/^    int Computed;               \/* Is the digest computed?          *\/$/;"	m	struct:SHA1Context
+Corrupted	sha1.h	/^    int Corrupted;              \/* Is the message digest corruped?  *\/$/;"	m	struct:SHA1Context
+Hand	p2p.c	/^}Hand;$/;"	v	typeref:struct:Handshake_
+Handshake_	p2p.c	/^struct Handshake_$/;"	s	file:
+Head	p2p.c	/^}Head;$/;"	v	typeref:struct:Head_
+Head_	p2p.c	/^struct Head_$/;"	s	file:
+Length_High	sha1.h	/^    unsigned Length_High;       \/* Message length in bits           *\/$/;"	m	struct:SHA1Context
+Length_Low	sha1.h	/^    unsigned Length_Low;        \/* Message length in bits           *\/$/;"	m	struct:SHA1Context
+MAXLINE	util.h	19;"	d
+Message_Block	sha1.h	/^    unsigned char Message_Block[64]; \/* 512-bit message blocks      *\/$/;"	m	struct:SHA1Context
+Message_Block_Index	sha1.h	/^    int Message_Block_Index;    \/* Index into message block array   *\/$/;"	m	struct:SHA1Context
+Message_Digest	sha1.h	/^    unsigned Message_Digest[5]; \/* Message Digest (output)          *\/$/;"	m	struct:SHA1Context
+PToP	p2p.c	/^void *PToP(void *arg)$/;"	f
+SHA1CircularShift	sha1.c	46;"	d	file:
+SHA1Context	sha1.h	/^typedef struct SHA1Context$/;"	s
+SHA1Context	sha1.h	/^} SHA1Context;$/;"	t	typeref:struct:SHA1Context
+SHA1Input	sha1.c	/^void SHA1Input(     SHA1Context         *context,$/;"	f
+SHA1PadMessage	sha1.c	/^void SHA1PadMessage(SHA1Context *context)$/;"	f
+SHA1ProcessMessageBlock	sha1.c	/^void SHA1ProcessMessageBlock(SHA1Context *context)$/;"	f
+SHA1Reset	sha1.c	/^void SHA1Reset(SHA1Context *context)$/;"	f
+SHA1Result	sha1.c	/^int SHA1Result(SHA1Context *context)$/;"	f
+TESTA	shatest.c	28;"	d	file:
+TESTB	shatest.c	31;"	d	file:
+TESTB_1	shatest.c	29;"	d	file:
+TESTB_2	shatest.c	30;"	d	file:
+TESTC	shatest.c	32;"	d	file:
+UTIL_H	util.h	17;"	d
+_BENCODE_H	bencode.h	14;"	d
+_SHA1_H_	sha1.h	25;"	d
+_announce_url_t	btdata.h	/^typedef struct _announce_url_t {$/;"	s
+_be_decode	bencode.c	/^static be_node *_be_decode(const char **data, long long *data_len)$/;"	f	file:
+_be_decode_int	bencode.c	/^static long long _be_decode_int(const char **data, long long *data_len)$/;"	f	file:
+_be_decode_str	bencode.c	/^static char *_be_decode_str(const char **data, long long *data_len)$/;"	f	file:
+_be_dump	bencode.c	/^static void _be_dump(be_node *node, ssize_t indent)$/;"	f	file:
+_be_dump_indent	bencode.c	/^static void _be_dump_indent(ssize_t indent)$/;"	f	file:
+_be_free_str	bencode.c	/^static inline void _be_free_str(char *str)$/;"	f	file:
+_peer_t	btdata.h	/^typedef struct _peer_t {$/;"	s
+_peerdata	btdata.h	/^typedef struct _peerdata {$/;"	s
+_torrentmetadata	btdata.h	/^typedef struct _torrentmetadata {$/;"	s
+_tracker_data	btdata.h	/^typedef struct _tracker_data {$/;"	s
+_tracker_request	btdata.h	/^typedef struct _tracker_request {$/;"	s
+_tracker_response	btdata.h	/^typedef struct _tracker_response {$/;"	s
+announce	btdata.h	/^  char* announce; \/\/ tracker的URL$/;"	m	struct:_torrentmetadata
+announce_url_t	btdata.h	/^} announce_url_t;$/;"	t	typeref:struct:_announce_url_t
+be_alloc	bencode.c	/^static be_node *be_alloc(be_type type)$/;"	f	file:
+be_decode	bencode.c	/^be_node *be_decode(const char *data)$/;"	f
+be_decoden	bencode.c	/^be_node *be_decoden(const char *data, long long len)$/;"	f
+be_dict	bencode.h	/^typedef struct be_dict {$/;"	s
+be_dict	bencode.h	/^} be_dict;$/;"	t	typeref:struct:be_dict
+be_dump	bencode.c	/^void be_dump(be_node *node)$/;"	f
+be_free	bencode.c	/^void be_free(be_node *node)$/;"	f
+be_node	bencode.h	/^typedef struct be_node {$/;"	s
+be_node	bencode.h	/^} be_node;$/;"	t	typeref:struct:be_node
+be_str_len	bencode.c	/^long long be_str_len(be_node *node)$/;"	f
+be_type	bencode.h	/^} be_type;$/;"	t	typeref:enum:__anon1
+choked	btdata.h	/^  int choked;         \/\/ 作为下载者, 我们被远端peer阻塞$/;"	m	struct:_peer_t
+choking	btdata.h	/^  int choking;        \/\/ 作为上传者, 阻塞远端peer$/;"	m	struct:_peer_t
+client_shutdown	shutdown.c	/^void client_shutdown(int sig)$/;"	f
+connect_to_host	util.c	/^int connect_to_host(char* ip, int port)$/;"	f
+d	bencode.h	/^		struct be_dict *d;$/;"	m	union:be_node::__anon2	typeref:struct:be_node::__anon2::be_dict
+data	btdata.h	/^  char* data;     \/\/ B编码的字符串$/;"	m	struct:_tracker_response
+downloaded	btdata.h	/^  int downloaded;$/;"	m	struct:_tracker_request
+file_len	util.c	/^int file_len(FILE* fp)$/;"	f
+g_bitmap	btdata.h	/^char* g_bitmap;$/;"	v
+g_done	btdata.h	/^int g_done; \/\/ 表明程序是否应该终止$/;"	v
+g_downloaded	btdata.h	/^int g_downloaded;$/;"	v
+g_filedata	btdata.h	/^char* g_filedata;      \/\/ 文件的实际数据$/;"	v
+g_filelen	btdata.h	/^int g_filelen;$/;"	v
+g_infohash	btdata.h	/^int g_infohash[5]; \/\/ 要共享或要下载的文件的SHA1哈希值, 每个客户端同时只能处理一个文件$/;"	v
+g_left	btdata.h	/^int g_left;$/;"	v
+g_my_id	btdata.h	/^char g_my_id[20];$/;"	v
+g_my_ip	btdata.h	/^char g_my_ip[128]; \/\/ 格式为XXX.XXX.XXX.XXX, null终止$/;"	v
+g_num_pieces	btdata.h	/^int g_num_pieces;$/;"	v
+g_peerport	btdata.h	/^int g_peerport; \/\/ peer监听的端口号$/;"	v
+g_torrentmeta	btdata.h	/^torrentmetadata_t* g_torrentmeta;$/;"	v
+g_tracker_ip	btdata.h	/^char g_tracker_ip[16]; \/\/ tracker的IP地址, 格式为XXX.XXX.XXX.XXX(null终止)$/;"	v
+g_tracker_port	btdata.h	/^int g_tracker_port;$/;"	v
+g_tracker_response	btdata.h	/^tracker_data *g_tracker_response;$/;"	v
+g_uploaded	btdata.h	/^int g_uploaded;$/;"	v
+get_peer_data	process_tracker_response.c	/^void get_peer_data(peerdata* peer, be_node* ben_res)$/;"	f
+get_peers	process_tracker_response.c	/^void get_peers(tracker_data* td, be_node* peer_list)$/;"	f
+get_tracker_data	process_tracker_response.c	/^tracker_data* get_tracker_data(char* data, int len)$/;"	f
+have_interest	btdata.h	/^  int have_interest;  \/\/ 作为下载者, 对远端peer的分片有兴趣$/;"	m	struct:_peer_t
+hostname	btdata.h	/^  char* hostname;$/;"	m	struct:_announce_url_t
+i	bencode.h	/^		long long i;$/;"	m	union:be_node::__anon2
+id	btdata.h	/^  char id[21]; \/\/ 20用于null终止符$/;"	m	struct:_peerdata
+id	p2p.c	/^	char id;$/;"	m	struct:Head_	file:
+id	p2p.c	/^	char id[20];$/;"	m	struct:Handshake_	file:
+info_hash	btdata.h	/^  int info_hash[5]; \/\/ torrent的info_hash值(info键对应值的SHA1哈希值)$/;"	m	struct:_torrentmetadata
+info_hash	btdata.h	/^  int info_hash[5];$/;"	m	struct:_tracker_request
+init	simpletorrent.c	/^void init()$/;"	f
+interested	btdata.h	/^  int interested;     \/\/ 远端peer对我们的分片有兴趣$/;"	m	struct:_peer_t
+interval	btdata.h	/^  int interval;$/;"	m	struct:_tracker_data
+ip	btdata.h	/^  char ip[16]; \/\/ 自己的IP地址, 格式为XXX.XXX.XXX.XXX, 最后以'\\0'结尾$/;"	m	struct:_tracker_request
+ip	btdata.h	/^  char* ip; \/\/ Null终止$/;"	m	struct:_peerdata
+isSeed	btdata.h	/^int isSeed;$/;"	v
+key	bencode.h	/^	char *key;$/;"	m	struct:be_dict
+l	bencode.h	/^		struct be_node **l;$/;"	m	union:be_node::__anon2	typeref:struct:be_node::__anon2::be_node
+left	btdata.h	/^  int left;$/;"	m	struct:_tracker_request
+len	p2p.c	/^	char len;$/;"	m	struct:Handshake_	file:
+len	p2p.c	/^	int len;$/;"	m	struct:Head_	file:
+length	btdata.h	/^  int length;     \/\/ 文件长度, 以字节为单位$/;"	m	struct:_torrentmetadata
+main	shatest.c	/^int main()$/;"	f
+main	simpletorrent.c	/^int main(int argc, char **argv) $/;"	f
+make_listen_port	util.c	/^int make_listen_port(int port)$/;"	f
+make_tracker_request	make_tracker_request.c	/^char* make_tracker_request(int event, int* mlen)$/;"	f
+name	btdata.h	/^  char name[20]; $/;"	m	struct:_peer_t
+name	btdata.h	/^  char* name;     \/\/ 文件名$/;"	m	struct:_torrentmetadata
+name	p2p.c	/^	char name[19];$/;"	m	struct:Handshake_	file:
+num_pieces	btdata.h	/^  int num_pieces; \/\/ 分片数量(为方便起见)$/;"	m	struct:_torrentmetadata
+numpeers	btdata.h	/^  int numpeers;$/;"	m	struct:_tracker_data
+parse_announce_url	parse_announce_url.c	/^announce_url_t* parse_announce_url(char* announce)$/;"	f
+parsetorrentfile	parsetorrentfile.c	/^torrentmetadata_t* parsetorrentfile(char* filename)$/;"	f
+peer_id	btdata.h	/^  char peer_id[20];$/;"	m	struct:_tracker_request
+peer_t	btdata.h	/^} peer_t;$/;"	t	typeref:struct:_peer_t
+peerdata	btdata.h	/^} peerdata;$/;"	t	typeref:struct:_peerdata
+peers	btdata.h	/^  peerdata* peers;$/;"	m	struct:_tracker_data
+piece_len	btdata.h	/^  int piece_len;  \/\/ 每一个分片的字节数$/;"	m	struct:_torrentmetadata
+pieces	btdata.h	/^  char* pieces;   \/\/ 针对所有分片的20字节长的SHA1哈希值连接而成的字符串$/;"	m	struct:_torrentmetadata
+port	btdata.h	/^  int port;$/;"	m	struct:_announce_url_t
+port	btdata.h	/^  int port;$/;"	m	struct:_peerdata
+port	btdata.h	/^  int port;$/;"	m	struct:_tracker_request
+preprocess_tracker_response	process_tracker_response.c	/^tracker_response* preprocess_tracker_response(int sockfd)$/;"	f
+recvline	util.c	/^int recvline(int fd, char **line)$/;"	f
+recvlinef	util.c	/^int recvlinef(int fd, char *format, ...)$/;"	f
+reserve	p2p.c	/^	char reserve[8];$/;"	m	struct:Handshake_	file:
+reverse_byte_orderi	util.c	/^int reverse_byte_orderi(int i)$/;"	f
+s	bencode.h	/^		char *s;$/;"	m	union:be_node::__anon2
+sha	p2p.c	/^	char sha[20];$/;"	m	struct:Handshake_	file:
+size	btdata.h	/^  int size;       \/\/ B编码字符串的字节数$/;"	m	struct:_tracker_response
+sockfd	btdata.h	/^  int sockfd;$/;"	m	struct:_peer_t
+torrentmetadata_t	btdata.h	/^} torrentmetadata_t;$/;"	t	typeref:struct:_torrentmetadata
+tracker_data	btdata.h	/^} tracker_data;$/;"	t	typeref:struct:_tracker_data
+tracker_request	btdata.h	/^} tracker_request;$/;"	t	typeref:struct:_tracker_request
+tracker_response	btdata.h	/^} tracker_response;$/;"	t	typeref:struct:_tracker_response
+type	bencode.h	/^	be_type type;$/;"	m	struct:be_node
+uploaded	btdata.h	/^  int uploaded;$/;"	m	struct:_tracker_request
+val	bencode.h	/^	struct be_node *val;$/;"	m	struct:be_dict	typeref:struct:be_dict::be_node
+val	bencode.h	/^	} val;$/;"	m	struct:be_node	typeref:union:be_node::__anon2
+waitPeer	p2p.c	/^void *waitPeer(void *arg)$/;"	f
