@@ -1,7 +1,7 @@
 ##NetLab
 ##NJU 网络实验
 -----
-###by tianchi
+###by tianchi xiaoyu yawei
 
 - lab2: weather 天气查询
 - lab3: IM 即时通讯
